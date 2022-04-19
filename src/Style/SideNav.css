@@ -9,7 +9,7 @@
   font-size: x-large;
   font-weight: bolder;
   margin-left: 10px;
-  color: white;
+  /* color: white; */
 }
 .menu-item {
   margin-top: 50px;
@@ -21,7 +21,7 @@
   justify-items: center;
 }
 .link:hover {
-  background-color: #252f3f;
+  background-color: #e4e4e4;
 }
 .link-icon {
   font-size: 25px;
@@ -29,6 +29,6 @@
 .link-text {
   font-size: 15px;
   margin-left: 15px;
-  color: rgb(214, 214, 214);
+  color: gray;
   margin-top: 3px;
 }

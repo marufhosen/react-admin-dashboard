@@ -1,0 +1,45 @@
+.app-bar {
+  height: 70px;
+  background-color: #5e72e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Search style */
+.search {
+  display: flex;
+  height: 30px;
+  margin: 0 50px 0 50px;
+}
+.text-input {
+  padding: 10px;
+  font-size: 12px;
+  float: left;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 15px 0 0 15px;
+}
+.text-input:focus {
+  border: none;
+  outline: none;
+}
+.search-btn {
+  width: 40px;
+  color: black;
+  border-radius: 0 15px 15px 0;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+/* User style */
+.user {
+  background-color: #f1f1f1;
+  /* padding: 5px; */
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+}
+.user p {
+  text-align: center;
+}

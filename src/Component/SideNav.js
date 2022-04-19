@@ -9,6 +9,7 @@ import {
   FcBusinessman,
   FcLeave,
   FcPositiveDynamic,
+  FcFile,
 } from "react-icons/fc";
 
 const SideNav = () => {
@@ -45,7 +46,7 @@ const SideNav = () => {
     {
       path: "/form",
       name: "Form",
-      icon: <FcDataSheet />,
+      icon: <FcFile />,
     },
     {
       path: "/calender",
