@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../Style/SideNav.css";
-import logo from "../Assets/full-logo.png";
+import logo from "../Assets/intranet (1).png";
 
 import {
   FcDataSheet,
@@ -11,17 +11,10 @@ import {
   FcPositiveDynamic,
   FcFile,
 } from "react-icons/fc";
+import { dashboardContext } from "../App";
 
 const SideNav = () => {
-  const [toggle, setToggle] = useState(true);
-
-  useEffect(() => {
-    setToggle(localStorage.getItem("toggle"));
-    console.log(localStorage.getItem("toggle"));
-  }, []);
-
-  // console.log(toggle);
-
+  const [isToggle, setToggle] = useContext(dashboardContext);
   const menuItem = [
     {
       path: "/",
@@ -58,8 +51,14 @@ const SideNav = () => {
   return (
     <div className="side-nav-container">
       <div className="brand-logo">
-        {/* <img src={logo} alt="logo" /> */}
-        <h2>INTRANET IT</h2>
+        <img src={logo} alt="logo" />
+        <h2
+          style={{
+            display: isToggle ? "block" : "none",
+          }}
+        >
+          INTRANET
+        </h2>
       </div>
       <div className="menu-item">
         {menuItem.map((item, index) => (
@@ -70,7 +69,14 @@ const SideNav = () => {
             activeclassName="active"
           >
             <div className="link-icon">{item.icon}</div>
-            <div className="link-text">{item.name}</div>
+            <div
+              className="link-text"
+              style={{
+                display: isToggle ? "block" : "none",
+              }}
+            >
+              {item.name}
+            </div>
           </NavLink>
         ))}
       </div>

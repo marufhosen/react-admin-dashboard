@@ -1,24 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import SideNav from "./SideNav";
 import "../Style/MainLayout.css";
 import AppBar from "./AppBar";
+import { dashboardContext } from "../App";
 
 const MainLayout = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(true);
-
-  useEffect(() => {
-    localStorage.setItem("toggle", isOpen);
-  }, [isOpen]);
-
+  const [isToggle] = useContext(dashboardContext);
   return (
     <div className="container">
-      <div style={{ width: isOpen ? "250px" : "55px" }} className="side-nav">
+      <div style={{ width: isToggle ? "250px" : "55px" }} className="side-nav">
         <SideNav />
       </div>
       <div className="main-content">
-        {/* <div className="app-bar">
-          <button onClick={() => setIsOpen(!isOpen)}>Menu</button>
-        </div> */}
         <AppBar />
         <main>{children}</main>
       </div>

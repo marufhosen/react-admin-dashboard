@@ -1,14 +1,18 @@
 .side-nav-container {
   padding: 10px;
   margin-top: 10px;
+  z-index: 100;
+}
+.brand-logo {
+  display: flex;
 }
 .brand-logo img {
-  width: 150px;
+  width: 35px;
 }
 .brand-logo h2 {
   font-size: x-large;
   font-weight: bolder;
-  margin-left: 10px;
+  margin-left: 15px;
   /* color: white; */
 }
 .menu-item {
@@ -16,19 +20,20 @@
 }
 .link {
   display: flex;
-  margin: 5px 0 5px 0;
+  margin: 10px 0 5px 0;
   padding: 5px 5px 0 5px;
   justify-items: center;
+  transition: 0.2s;
 }
 .link:hover {
   background-color: #e4e4e4;
 }
 .link-icon {
-  font-size: 25px;
+  font-size: 20px;
 }
 .link-text {
   font-size: 15px;
   margin-left: 15px;
   color: gray;
-  margin-top: 3px;
+  margin-top: 1px;
 }
