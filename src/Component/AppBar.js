@@ -1,13 +1,7 @@
 import React, { useContext } from "react";
 import "../Style/AppBar.css";
-import {
-  BiSearchAlt2,
-  BiMenu,
-  BiGridAlt,
-  BiNotification,
-  BiUserCircle,
-  BiX,
-} from "react-icons/bi";
+import { BiSearchAlt2, BiMenu, BiBell, BiX } from "react-icons/bi";
+import { CgMenuGridR } from "react-icons/cg";
 import { dashboardContext } from "../App";
 
 const AppBar = () => {
@@ -35,9 +29,13 @@ const AppBar = () => {
         </form>
       </div>
       <div className="appbar-right">
-        <BiNotification className="noti-icon" />
-        <BiGridAlt className="list-icon" />
-        <BiUserCircle className="user-icon" />
+        <BiBell className="noti-icon" />
+        <CgMenuGridR className="list-icon" />
+        <img
+          class="avatar"
+          src="https://ipic2021.com/wp-content/uploads/2017/10/speaker3-min.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

@@ -1,0 +1,116 @@
+.main-dashboard {
+  /* min-height: 100px; */
+  background-color: #5e72e4;
+}
+
+/* Dashboard summary */
+
+.dashboard-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.view {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.growth {
+  display: flex;
+  padding: 10px 0 0 0;
+}
+.growth-ico {
+  margin-top: 3px;
+  font-size: 18px;
+  margin-right: 8px;
+  color: #2dce89;
+}
+.growth-text {
+  font-size: 15px;
+}
+.growth-text span {
+  margin-right: 5px;
+  color: #2dce89;
+}
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f98ad;
+}
+.number {
+  color: #32325d;
+  font-size: 20px;
+  font-weight: 800;
+}
+.content-icon {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+/* ico bg */
+.traffic-icon {
+  background-image: linear-gradient(
+    to right top,
+    #f53d56,
+    #f6444f,
+    #f64c48,
+    #f65342,
+    #f55a3b
+  );
+}
+.users-icon {
+  background-image: linear-gradient(
+    to right top,
+    #fb7040,
+    #fc7f3d,
+    #fd8e3c,
+    #fc9c3d,
+    #fbaa40
+  );
+}
+.sales-icon {
+  background-image: linear-gradient(
+    to right top,
+    #2dce90,
+    #17cfa1,
+    #08cfb1,
+    #16cfbe,
+    #2dcec9
+  );
+}
+.performance-icon {
+  background-image: linear-gradient(
+    to right top,
+    #11c4ee,
+    #00b5f3,
+    #00a4f6,
+    #0092f5,
+    #117eef
+  );
+}
+.icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dashboard-summary {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

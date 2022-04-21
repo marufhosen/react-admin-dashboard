@@ -3,6 +3,7 @@ import SideNav from "./SideNav";
 import "../Style/MainLayout.css";
 import AppBar from "./AppBar";
 import { dashboardContext } from "../App";
+import PerfectScrollbar from "react-perfect-scrollbar";
 
 const MainLayout = ({ children }) => {
   const [isToggle] = useContext(dashboardContext);
