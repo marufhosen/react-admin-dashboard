@@ -58,7 +58,8 @@
   border-radius: 30px;
 }
 
-/* ico bg */
+/* card icon  background color */
+
 .traffic-icon {
   background-image: linear-gradient(
     to right top,
@@ -104,9 +105,85 @@
   color: #fff;
 }
 
+/* Table visitor style*/
+
+.visitor-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 60% 37%;
+  padding: 20px;
+  column-gap: 3%;
+  row-gap: 10px;
+}
+.visitors {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.table-main-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.table-main-title p {
+  color: #32325d;
+  font-size: larger;
+  font-weight: bold;
+}
+/* see all button */
+.see-all-btn {
+  background-color: #5e74e4;
+  padding: 4px 10px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  font-size: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Table style */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid #ddd;
+  padding: 7px;
+}
+tr:nth-child(2) {
+  background-color: #f2f2f2;
+}
+th {
+  font-size: 12px;
+  text-align: left;
+  color: gray;
+  text-transform: uppercase;
+}
+
+/* Chart container */
+
+.pie-chart {
+  width: 70%;
+  margin: auto;
+}
+.pie-charts-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 768px) {
   .dashboard-summary {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .chart-container {
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .visitor-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (max-width: 600px) {

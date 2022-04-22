@@ -7,6 +7,9 @@ import {
   BiBarChartAlt,
   BiUpArrowAlt,
 } from "react-icons/bi";
+import VaiticalChart from "../Component/DashboardChart/VaiticalChart";
+import LineCharts from "../Component/DashboardChart/LineCharts";
+import PieCharts from "../Component/DashboardChart/PieCharts";
 
 const Dashboard = () => {
   return (
@@ -89,6 +92,70 @@ const Dashboard = () => {
                 Since last month
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="visitor-container">
+        <div className="visitors">
+          <div className="table-main-title">
+            <p>Page visits</p>
+            <button className="see-all-btn">See All</button>
+          </div>
+          <table className="visitors-table">
+            <tr>
+              <th>Page Name</th>
+              <th>Visitors</th>
+              <th>Unique Visitors</th>
+              <th>Bonous Rate</th>
+            </tr>
+            <tr>
+              <td>Intranet/</td>
+              <td>4023</td>
+              <td>328</td>
+              <td>45.04%</td>
+            </tr>
+            <tr>
+              <td>Intranet/</td>
+              <td>4023</td>
+              <td>328</td>
+              <td>45.04%</td>
+            </tr>
+            <tr>
+              <td>Intranet/</td>
+              <td>4023</td>
+              <td>328</td>
+              <td>45.04%</td>
+            </tr>
+            <tr>
+              <td>Intranet/</td>
+              <td>4023</td>
+              <td>328</td>
+              <td>45.04%</td>
+            </tr>
+            <tr>
+              <td>Intranet/</td>
+              <td>4023</td>
+              <td>328</td>
+              <td>45.04%</td>
+            </tr>
+            <tr>
+              <td>Intranet/</td>
+              <td>4023</td>
+              <td>328</td>
+              <td>45.04%</td>
+            </tr>
+            <tr>
+              <td>Intranet/</td>
+              <td>4023</td>
+              <td>328</td>
+              <td>45.04%</td>
+            </tr>
+          </table>
+        </div>
+        <div className="visitors">
+          <div className="pie-chart">
+            <p className="pie-charts-title">Growth Statistics</p>
+            <PieCharts />
           </div>
         </div>
       </div>
