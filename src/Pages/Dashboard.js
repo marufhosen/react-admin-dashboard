@@ -7,10 +7,9 @@ import {
   BiBarChartAlt,
   BiUpArrowAlt,
 } from "react-icons/bi";
-import VaiticalChart from "../Component/DashboardChart/VaiticalChart";
-import LineCharts from "../Component/DashboardChart/LineCharts";
 import PieCharts from "../Component/DashboardChart/PieCharts";
 import ActiveMembers from "../Component/DashboardMiniContent/ActiveMembers";
+import TodoList from "../Component/DashboardMiniContent/TodoList";
 
 const Dashboard = () => {
   return (
@@ -166,7 +165,9 @@ const Dashboard = () => {
         <div className="visitors active-member">
           <ActiveMembers />
         </div>
-        <div className="visitors todo-list">members</div>
+        <div className="visitors todo-list">
+          <TodoList />
+        </div>
       </div>
     </div>
   );

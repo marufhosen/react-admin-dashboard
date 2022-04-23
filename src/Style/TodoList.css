@@ -1,0 +1,40 @@
+.todo-title {
+  padding: 15px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.todo-content {
+  padding-left: 15px;
+}
+.content-1 {
+  border-left: 4px solid #2dce89;
+}
+.content-2 {
+  border-left: 4px solid #fb6340;
+}
+.content-3 {
+  border-left: 4px solid #11cdef;
+}
+.todo-content-title {
+  font-weight: bold;
+  font-size: 15px;
+}
+.todo-content-title-1 {
+  text-decoration: line-through;
+}
+.todo-time {
+  font-size: small;
+  color: #6e6e6e;
+}
+
+.todo-check input {
+  background: #11cdef;
+}

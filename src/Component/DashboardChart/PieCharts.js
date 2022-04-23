@@ -69,7 +69,7 @@ class PieCharts extends React.Component {
           style={{ marginLeft: 25, marginRight: 5 }}
         />
         <label htmlFor="polar">polar</label>
-        <VictoryChart polar={this.state.polar} height={390}>
+        <VictoryChart polar={this.state.polar} height={420}>
           <VictoryLine
             interpolation={this.state.interpolation}
             data={data}

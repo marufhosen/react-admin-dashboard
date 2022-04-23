@@ -14,7 +14,7 @@ const ActiveMembers = () => {
             />
           </div>
           <div className="members-content">
-            <p>Johm Michale</p>
+            <p>John Michale</p>
             <div className="active">
               <p className="active-dots"></p>
               <p>Active</p>
@@ -36,7 +36,7 @@ const ActiveMembers = () => {
             />
           </div>
           <div className="members-content">
-            <p>Johm Michale</p>
+            <p>John Michale</p>
             <div className="active">
               <p className="active-dots active-dots-2"></p>
               <p>In a meeting</p>
@@ -58,7 +58,7 @@ const ActiveMembers = () => {
             />
           </div>
           <div className="members-content">
-            <p>Johm Michale</p>
+            <p>John Michale</p>
             <div className="active">
               <p className="active-dots active-dots-3"></p>
               <p>Offline</p>
