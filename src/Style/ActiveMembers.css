@@ -1,0 +1,36 @@
+.member-title {
+  padding: 15px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+.members-containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+.img-name-container {
+  display: flex;
+}
+.members-content {
+  margin-left: 20px;
+}
+.main-content .active {
+  display: flex;
+}
+.members-content .active {
+  font-size: 12px;
+}
+.active-dots {
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  background-color: #2dce89;
+  margin: 6px 5px 0 0;
+}
+.active-dots-2 {
+  background-color: #fb6340;
+}
+.active-dots-3 {
+  background-color: #f5365c;
+}

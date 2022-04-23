@@ -10,6 +10,7 @@ import {
 import VaiticalChart from "../Component/DashboardChart/VaiticalChart";
 import LineCharts from "../Component/DashboardChart/LineCharts";
 import PieCharts from "../Component/DashboardChart/PieCharts";
+import ActiveMembers from "../Component/DashboardMiniContent/ActiveMembers";
 
 const Dashboard = () => {
   return (
@@ -95,6 +96,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      {/* Visitor Table & Visitor Chart */}
       <div className="visitor-container">
         <div className="visitors">
           <div className="table-main-title">
@@ -158,6 +160,13 @@ const Dashboard = () => {
             <PieCharts />
           </div>
         </div>
+      </div>
+      {/* Members && todo list */}
+      <div className="member-todo-container">
+        <div className="visitors active-member">
+          <ActiveMembers />
+        </div>
+        <div className="visitors todo-list">members</div>
       </div>
     </div>
   );

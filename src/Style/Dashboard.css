@@ -117,7 +117,7 @@
 }
 .visitors {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
 }
 .table-main-title {
@@ -133,15 +133,17 @@
 /* see all button */
 .see-all-btn {
   background-color: #5e74e4;
-  padding: 4px 10px;
+  padding: 3px 10px;
   border: none;
   color: white;
   border-radius: 3px;
   font-size: 12px;
-  transition: 0.3s;
+  transition: 0.2s;
   cursor: pointer;
 }
-
+.see-all-btn:hover {
+  transform: scale(1.03);
+}
 /* Table style */
 
 table {
@@ -175,6 +177,15 @@ th {
   margin-bottom: 20px;
 }
 
+/* active memberand todo container style */
+.member-todo-container {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  padding: 20px;
+  column-gap: 4%;
+  row-gap: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .dashboard-summary {
     grid-template-columns: repeat(2, 1fr);
@@ -184,6 +195,9 @@ th {
   }
   .visitor-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .member-todo-container {
+    grid-template-columns: repeat(1, 2fr);
   }
 }
 @media only screen and (max-width: 600px) {
