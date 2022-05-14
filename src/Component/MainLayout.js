@@ -3,6 +3,7 @@ import SideNav from "./SideNav";
 import "../Style/MainLayout.css";
 import AppBar from "./AppBar";
 import { dashboardContext } from "../App";
+import Footer from "./Footer";
 
 const MainLayout = ({ children }) => {
   const [isToggle] = useContext(dashboardContext);
@@ -13,7 +14,10 @@ const MainLayout = ({ children }) => {
       </div>
       <div className="main-content">
         <AppBar />
-        <main>{children}</main>
+        <div className="route-content">
+          <main>{children}</main>
+        </div>
+        <Footer />
       </div>
     </div>
   );
