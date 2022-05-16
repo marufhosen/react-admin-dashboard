@@ -1,0 +1,12 @@
+.calender-container{
+    width: 90%;
+    margin: auto;
+}
+.calander-title{
+    text-align: center;
+    margin: 25px 0 25px 0;
+}
+.cal{
+    width: 100%;
+    margin: auto;
+}
